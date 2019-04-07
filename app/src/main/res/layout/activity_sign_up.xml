@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.andoid.dinord.SignUp">
+
+    <ImageView
+        android:id="@+id/DinOrdImage"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/food_app" />
+
+    <TextView
+        android:id="@+id/DinOrdtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DinOrdImage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_title"
+        android:textColor="#d74f4f"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/nameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DinOrdtitle"
+        android:layout_marginTop="20dp"
+        android:hint="@string/name_hint"
+        android:textColorHint="#ffff25e6" />
+
+    <EditText
+        android:id="@+id/passwordID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameID"
+        android:hint="@string/CreatePassword"
+        android:inputType="textPassword"
+        android:textColorHint="#ffff25e6" />
+
+    <EditText
+        android:id="@+id/reTypePasswordID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordID"
+        android:hint="@string/ReTypePassword"
+        android:inputType="textPassword"
+        android:textColorHint="#ffff25e6" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reTypePasswordID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/SignUpButtonText"
+       />
+
+</RelativeLayout>

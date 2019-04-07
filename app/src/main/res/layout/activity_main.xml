@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f07a7a"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.andoid.dinord.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/dinnerimage"
+            android:contentDescription="@string/content_description"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/dinner03"
+            android:contentDescription="@string/content_description"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/dinord_welcome"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/ready_button"
+            android:textAllCaps="true"
+            android:onClick="readyToGo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/dinner"
+            android:contentDescription="@string/content_description"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/dinner1"
+            android:contentDescription="@string/content_description"/>
+    </LinearLayout>
+
+</LinearLayout>

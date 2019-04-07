@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.andoid.dinord">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/food_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".detailsOfYou" />
+        <activity
+            android:name=".coffee"
+            android:label="@string/title_activity_coffee"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Tea"
+            android:label="Tea"/>
+        <activity android:name=".MasalaDosa"
+            android:label="Masala Dosa"/>
+        <activity android:name=".ThuppaDosa"
+            android:label="Thuppa Dosa"/>
+        <activity android:name=".PlainDosa"
+            android:label="Plain Dosa" />
+        <activity android:name=".Baje"
+            android:label="Baje"/>
+        <activity android:name=".IdliOrKsheera"
+            android:label="Idli/Ksheera"/>
+        <activity android:name=".Parota"
+            android:label="Parota"/>
+        <activity android:name=".Chapathi"
+            android:label="Chapathi"/>
+        <activity android:name=".Juice"
+            android:label="Juice"/>
+        <activity android:name=".AddMore"
+            android:label="Add More"/>
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".SignUp"
+            android:label="Sign Up"/>
+        <activity android:name=".AccountCreated"
+            android:label="Success"/>
+        <activity android:name=".MyOrderList"
+            android:label="My Orders"/>
+        <activity android:name=".StartOrderHere"
+            android:label="Start Here"/>
+        <activity android:name=".MyOrdersActivity"
+            android:label="My Orders">
+
+        </activity>
+    </application>
+
+</manifest>

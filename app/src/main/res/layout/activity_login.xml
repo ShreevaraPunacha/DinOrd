@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.andoid.dinord.LoginActivity">
+
+        <TextView
+            android:id="@+id/log_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login_title"
+            android:textColor="#978d8d"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/DinOrdtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/log_title"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_title"
+            android:textColor="#d74f4f"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:id="@+id/DinordImage"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_below="@id/DinOrdtitle"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/food_app" />
+
+        <EditText
+            android:id="@+id/nameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DinordImage"
+            android:layout_marginTop="20dp"
+            android:hint="@string/name_hint"
+            android:textColorHint="#ffff25e6" />
+
+        <EditText
+            android:id="@+id/passwordID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameID"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="#ffff25e6" />
+
+        <CheckBox
+            android:id="@+id/rememberMeID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/passwordID"
+            android:text="@string/rememberMe" />
+
+
+        <TextView
+            android:id="@+id/attemptID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rememberMeID"
+            android:layout_marginTop="10dp"
+            android:text="@string/AttemptsLeft"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/attemptCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rememberMeID"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/attemptID"
+            android:text="3"
+            android:textColor="#ea1313"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/attemptID"
+            android:layout_marginTop="16dp"
+            android:layout_toStartOf="@id/attemptCount"
+            android:text="@string/logButtonText"
+            android:textAllCaps="true" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/attemptID"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/login_button"
+            android:text="@string/cancelButtonText" />
+
+        <TextView
+            android:id="@+id/SignUpID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_button"
+            android:layout_marginTop="16dp"
+            android:text="@string/new_login_statement"
+            android:textColor="#d74f4f" />
+
+        <TextView
+            android:id="@+id/signUpClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_button"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/SignUpID"
+            android:clickable="true"
+            android:onClick="SignUpSection"
+            android:text="@string/clickable_signup"
+            android:textColor="#2c3ad7" />
+
+        <TextView
+            android:id="@+id/hereOfsignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_button"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/signUpClick"
+            android:text="@string/hereOfSignUpstate"
+            android:textColor="#d74f4f" />
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hereOfsignUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:onClick="displayRecord"
+            android:text="@string/SignUpButtonText" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goToOrderList"
+            android:text="dataBase" />
+
+        <TextView
+            android:id="@+id/simply_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpButton"
+            android:text="a"
+            android:textColor="@color/navy_blue"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</ScrollView>

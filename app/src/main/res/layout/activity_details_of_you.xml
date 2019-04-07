@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:padding="16dp"
+    tools:context="com.example.andoid.dinord.detailsOfYou">
+    <TextView
+        android:id="@+id/name_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textAllCaps="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/order_home_screen"
+        android:background="#b39c20cc"
+        android:onClick="ReadyToOrder"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_orders"
+        android:background="#d08dbb37"
+        android:onClick="MyOrders"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dinord_cash"
+        android:background="#fbd7d413" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_account"
+        android:background="#d08dbb37" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_out"
+        android:background="#b39c20cc"
+        android:onClick="SignOut"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_us"
+        android:background="#1a42e3" />
+
+</LinearLayout>
